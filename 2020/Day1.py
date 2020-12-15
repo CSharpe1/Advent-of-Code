@@ -47,6 +47,5 @@ while val2020 != True:
             countb += 1
             print("Count b = ", countb)
 
-    val2020 = True
 
 print("END")
