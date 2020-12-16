@@ -18,34 +18,26 @@ In this list, the two entries that sum to 2020 are 1721 and 299. Multiplying the
 
 Of course, your expense report is much larger. Find the two entries that sum to 2020; what do you get if you multiply them together?
 '''
-check = [1721,979,366,299,675,1456]
+check = [4,23423 ,54457,786424,3233,2432,3453636,67565,5858,346346,25325,2424,3546,1700,1721, 979,366,299,675,1456]
 
 target = 2020
-var1 = 0
-var2 = 0
-val2020 = False
-#print(check[3])
-time = 0
-#print(len(check))
+# Function to find the 2 values that = 2020
+a = 0
+b = 1
+check1 = check[a]
+check2 = check[b]
+while b < len(check):
+    if (check[a] + check[b]) == 2020:
+        break
+    else:
+        b +=1
+    if b == len(check):
+        a += 1
+        b = 0
+#   Find result
+print("A = ", a)
+print("Check a", check[a])
+print("B = ", b)
+print("Check b", check[b])
 
-while time < len(check):
-    print(check[time])
-    time += 1
-
-## find the 2 values that = 2020
-
-counta = 0
-countb = 1
-while val2020 != True:
-    var1 = check[counta] 
-    while countb < len(check):
-        if (check[counta] + check[countb]) == 2020:
-            val2020 = True 
-            vsum = check[counta] + check[countb]  
-            print("Sum =", vsum )
-        else:
-            countb += 1
-            print("Count b = ", countb)
-
-
-print("END")
+print("The total =  ",check[a]*check[b])
